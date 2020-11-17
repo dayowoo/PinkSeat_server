@@ -25,7 +25,7 @@ SECRET_KEY = 'buq*bl$efy@jy6j4ex-2f8lv1&&0c57_+-3!m&s9iopxz3dz(g'
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
-ALLOWED_HOSTS = []
+ALLOWED_HOSTS = ['*']
 
 
 # Application definition
@@ -37,6 +37,8 @@ INSTALLED_APPS = [
     'django.contrib.sessions',
     'django.contrib.messages',
     'django.contrib.staticfiles',
+    'rest_framework',
+    'PinkSeat_app',
 ]
 
 MIDDLEWARE = [
@@ -75,11 +77,16 @@ WSGI_APPLICATION = 'PinkSeat_project.wsgi.application'
 
 DATABASES = {
     'default': {
-        'ENGINE': 'django.db.backends.sqlite3',
-        'NAME': BASE_DIR / 'db.sqlite3',
+        'ENGINE': 'django.db.backends.mysql',
+        'NAME': 'pinkseat_db',
+        'USER': 'root',
+        'PASSWORD': '1234',
+        'HOST': 'localhost',
+        'PORT': '3306', 
     }
 }
 
+TIME_ZONE = 'Asia/Seoul'
 
 # Password validation
 # https://docs.djangoproject.com/en/3.1/ref/settings/#auth-password-validators
