@@ -4,7 +4,8 @@
 -----------
 
 ### Tool
-+ Kodualr
-+ Firebase
++ Django Rest Framework
++ Android Studio v4.1.1
++ MySQL 
 
 ------------
