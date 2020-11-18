@@ -5,7 +5,7 @@
 
 ### Tool
 + Django Rest Framework
-+ Android Studio v4.1.1
++ Android Studio v 4.1.1
 + MySQL 
 
 ------------
